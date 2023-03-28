@@ -2994,6 +2994,18 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
 }
 
+.section-header-allcaps>img{
+    position: absolute;
+    top: -50px; left: -80px;
+    animation: rotate 16s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes rotate{
+    0%{rotate: 0deg;}
+    100%{rotate: 360deg;}
+}
+
 /* ------------------------------------------------------------------- 
  * ## animation stuff 
  * ------------------------------------------------------------------- */
@@ -3581,17 +3593,16 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     left: 50%;
 }
-.typing-txt{display: none;}
-.typing ul li{
-    font-size: 62px;
-    font-weight: 600;
-    line-height: 1.5;
+.typing-txt{
     color: #fff;
+    font-size: 62px;
+    line-height: 1.5;
+    font-weight: 600;
 }
-ul{list-style:none;}
 .typing ul li{
     display:block;
 }
+
 .typing ul li.on {  
     display: inline-block; 
     animation-name: cursor; 
